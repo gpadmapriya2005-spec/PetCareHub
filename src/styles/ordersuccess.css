@@ -1,0 +1,88 @@
+.order-success-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.order-success-box {
+  width: 600px;
+  background: white;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.order-success-icon {
+  font-size: 70px;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.order-success-box h1 {
+  margin-bottom: 10px;
+}
+
+.order-success-box > p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.order-info {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.order-info div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.order-info span {
+  color: #666;
+}
+
+.order-status {
+  color: #16a34a;
+}
+
+.order-success-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.order-success-buttons a {
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.order-success-buttons a:last-child {
+  background: #f1f5f9;
+  color: #222;
+}
+
+.order-loading,
+.order-error {
+  text-align: center;
+  padding: 80px;
+}
+
+.order-error a {
+  display: inline-block;
+  margin-top: 15px;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+}

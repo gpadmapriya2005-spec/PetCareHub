@@ -1,0 +1,154 @@
+.my-orders-page {
+  min-height: 80vh;
+  padding: 50px 7%;
+}
+
+.orders-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.orders-header h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.orders-header p {
+  color: #666;
+}
+
+.orders-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.order-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 18px;
+}
+
+.order-card-header h2 {
+  font-size: 20px;
+}
+
+.order-card-header p {
+  color: #777;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.order-status-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.order-products {
+  padding: 20px 0;
+}
+
+.ordered-product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+}
+
+.ordered-product img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ordered-product h3 {
+  font-size: 16px;
+}
+
+.ordered-product p {
+  color: #666;
+  margin-top: 5px;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+
+.order-footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order-footer span {
+  color: #777;
+  font-size: 13px;
+}
+
+.order-footer strong {
+  font-size: 16px;
+}
+
+.no-orders {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 60px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.no-orders i {
+  font-size: 60px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.no-orders h2 {
+  margin-bottom: 10px;
+}
+
+.no-orders p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.no-orders a {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.orders-loading {
+  text-align: center;
+  padding: 80px;
+}
+
+@media (max-width: 600px) {
+  .order-card-header,
+  .order-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

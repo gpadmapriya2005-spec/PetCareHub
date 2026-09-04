@@ -1,0 +1,88 @@
+.booking-success-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.success-box {
+  width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 70px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.success-box h1 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.booking-details {
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.booking-details h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row span {
+  color: #666;
+}
+
+.confirmed {
+  color: #28a745;
+}
+
+.success-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.success-buttons a {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.view-bookings-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.services-btn {
+  background: #f1f5f9;
+  color: #222;
+}
+
+.loading,
+.booking-error {
+  text-align: center;
+  padding: 80px;
+}

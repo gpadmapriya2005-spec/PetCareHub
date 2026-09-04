@@ -1,0 +1,91 @@
+.reschedule-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.reschedule-box {
+  width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.reschedule-icon {
+  text-align: center;
+  font-size: 55px;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.reschedule-box h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.reschedule-box > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.service-name,
+.pet-name {
+  background: #f8fafc;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+.service-name strong,
+.pet-name strong {
+  margin-right: 8px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.update-booking-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.back-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: white;
+}
+
+.reschedule-loading,
+.reschedule-error {
+  text-align: center;
+  padding: 80px;
+}

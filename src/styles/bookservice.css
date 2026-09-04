@@ -1,0 +1,170 @@
+.booking-page {
+  min-height: 80vh;
+  padding: 50px 20px;
+  background: #f8fafc;
+
+  display: flex;
+  justify-content: center;
+}
+
+.booking-card {
+  width: 600px;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= SELECTED SERVICE ================= */
+
+.selected-service {
+  display: flex;
+  gap: 20px;
+
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.selected-service img {
+  width: 130px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+.selected-service h2 {
+  margin-bottom: 8px;
+}
+
+.selected-service p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.selected-service strong {
+  font-size: 20px;
+}
+
+/* ================= HEADING ================= */
+
+.booking-card > h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  font-weight: bold;
+
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* ================= BUTTON ================= */
+
+.confirm-booking-btn {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #222;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.confirm-booking-btn:hover {
+  background: #444;
+}
+
+.confirm-booking-btn i {
+  margin-right: 8px;
+}
+
+/* ================= ERROR ================= */
+
+.booking-form-error {
+  background: #ffe5e5;
+
+  color: #d00;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.booking-message,
+.booking-error {
+  text-align: center;
+
+  padding: 50px;
+
+  font-size: 20px;
+}
+
+.booking-error {
+  color: red;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+  .booking-card {
+    padding: 25px;
+  }
+
+  .selected-service {
+    flex-direction: column;
+  }
+
+  .selected-service img {
+    width: 100%;
+    height: 200px;
+  }
+
+}

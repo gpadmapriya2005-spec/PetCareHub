@@ -1,0 +1,157 @@
+.services-page {
+  min-height: 80vh;
+  padding: 50px 7%;
+  background: #f8fafc;
+}
+
+/* ================= HEADER ================= */
+
+.services-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.services-header h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.services-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* ================= SERVICES GRID ================= */
+
+.services-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+/* ================= CARD ================= */
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= IMAGE ================= */
+
+.service-image {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= CONTENT ================= */
+
+.service-content {
+  padding: 25px;
+}
+
+.service-content h2 {
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.service-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ================= INFO ================= */
+
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.service-info span {
+  color: #555;
+}
+
+.service-info i {
+  margin-right: 7px;
+}
+
+.service-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ================= BOOK BUTTON ================= */
+
+.book-btn {
+  display: block;
+
+  text-align: center;
+
+  padding: 12px;
+
+  background: #222;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #444;
+}
+
+.book-btn i {
+  margin-right: 8px;
+}
+
+/* ================= MESSAGES ================= */
+
+.services-message {
+  text-align: center;
+  font-size: 20px;
+}
+
+.services-error {
+  text-align: center;
+  color: red;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h1 {
+    font-size: 28px;
+  }
+
+}
