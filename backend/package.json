@@ -1,0 +1,12 @@
+{
+  "name": "petcarehub-backend",
+  "version": "1.0.0",
+  "description": "PetCareHub JSON Server backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
+}
