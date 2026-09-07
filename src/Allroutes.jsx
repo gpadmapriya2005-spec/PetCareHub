@@ -17,7 +17,7 @@ import Checkout from "./Pages/Checkout";
 import OrderSuccess from "./Pages/OrderSuccess";
 import MyOrders from "./Pages/MyOrders";
 
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 function Allroutes() {
   return (

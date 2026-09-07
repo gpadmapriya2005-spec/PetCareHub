@@ -4,7 +4,7 @@ import {
   useParams
 } from "react-router-dom";
 
-import API from "../services/api";
+import API from "../Services/api";
 
 import "../styles/reschedulebooking.css";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import API from "../services/api";
+import API from "../Services/api";
 
 import "../styles/myorders.css";
 

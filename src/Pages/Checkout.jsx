@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import API from "../services/api";
+import API from "../Services/api";
 import { clearCart } from "../redux/cartSlice";
 
 import "../styles/checkout.css";

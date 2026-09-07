@@ -1,5 +1,5 @@
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
 import Allroutes from "./Allroutes";
 
 function App() {
