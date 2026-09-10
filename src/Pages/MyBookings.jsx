@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -15,32 +15,27 @@ const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getBookings = async () => {
-
-    try {
-
-      const response = await API.get(
-        `/bookings?userId=${user.id}`
-      );
-
-      setBookings(response.data);
-
-    } catch (error) {
-
-      console.log(error);
-
-    } finally {
-
-      setLoading(false);
-
-    }
-  };
-
   useEffect(() => {
+    if (!user?.id) {
+      setLoading(false);
+      return;
+    }
 
-    getBookings();
+    const fetchBookings = async () => {
+      try {
+        const response = await API.get(
+          `/bookings?userId=${user.id}`
+        );
+        setBookings(response.data);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  }, []);
+    fetchBookings();
+  }, [user?.id]);
 
   const cancelBooking = async (id) => {
 
@@ -60,7 +55,9 @@ const MyBookings = () => {
 
       alert("Booking cancelled successfully");
 
-      getBookings();
+      setBookings((prev) =>
+        prev.map((b) => (b.id === id ? { ...b, status: "Cancelled" } : b))
+      );
 
     } catch (error) {
 

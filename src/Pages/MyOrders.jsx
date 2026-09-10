@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -15,31 +15,27 @@ const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getOrders = async () => {
-
-    try {
-
-      const response = await API.get(
-        `/orders?userId=${user.id}`
-      );
-
-      setOrders(response.data.reverse());
-
-    } catch (error) {
-
-      console.log(error);
-
-    } finally {
-
+  useEffect(() => {
+    if (!user?.id) {
       setLoading(false);
-
+      return;
     }
 
-  };
+    const fetchOrders = async () => {
+      try {
+        const response = await API.get(
+          `/orders?userId=${user.id}`
+        );
+        setOrders(response.data.reverse());
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  useEffect(() => {
-    getOrders();
-  }, []);
+    fetchOrders();
+  }, [user?.id]);
 
   if (loading) {
     return (

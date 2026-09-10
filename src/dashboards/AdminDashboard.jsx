@@ -7,10 +7,6 @@ function AdminDashboard() {
   const [pets, setPets] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    getdashboardData();
-  }, []);
-
   const getdashboardData = async () => {
     try {
       const usersResponse = await api.get("/users");
@@ -24,6 +20,10 @@ function AdminDashboard() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    getdashboardData();
+  }, []);
 
   const deleteUser = async (id) => {
     const confirmDelete = window.confirm(
